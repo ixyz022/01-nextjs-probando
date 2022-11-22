@@ -1,13 +1,13 @@
+import { Navigation } from './components/Navigation'
+
 export default function RootLayout ({ children }) {
   return (
     <html>
-      <head>Esto es un titulo</head>
+      <head>
+        <title>Esto es un titulo</title>
+      </head>
       <body>
-        <nav>
-          <ul>
-            <li>Home</li>
-          </ul>
-        </nav>
+        <Navigation />
         {children}
       </body>
     </html>
